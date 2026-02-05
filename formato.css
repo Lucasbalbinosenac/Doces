@@ -1,0 +1,182 @@
+.root{
+    --marrom-claro: #ffcaba;
+    --laranja: #b14100;
+    --marrom-escuro: #3b0e00;
+    --branco: #f1f1f1;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background-color: #f1f1f1;
+    line-height: 1.6;
+}
+
+/* HEADER; */
+
+header {
+background-image: url(./img/AdobeStock_1378753453.jpeg);
+background-size: cover;
+background-position: center;
+color:#ffcaba;
+text-align: center;
+padding: 100px 20px;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+
+header h1 {
+font-size: 6em;
+margin-bottom: 30px;
+text-shadow: 15px 15px 15px #181818;
+}
+
+header p {
+font-size: 3.5em;
+margin-bottom: 30px;
+font-style: italic;
+color: #f1f1f1;
+}
+
+header::before{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: linear-gradient(90deg,#b141004d 0%, #18181880 50%);
+z-index: 1;
+}
+
+header * {
+z-index: 2;
+}
+
+/* NAV; */
+
+nav a{
+border-radius: 10px;
+color: #f1f1f1;
+text-decoration: none;
+font-weight: bolder;
+margin: 0 15px;
+padding: 10px 15px;
+border: 1px solid rgb(0, 0, 0);
+background-color: #3b0e00;
+transition: background-color 0.3s, color 0,3s ;
+}
+
+nav a:hover{
+background-color: #b14100;
+color:#f1f1f1
+}
+
+section{
+padding: 60px 20px;
+text-align: center;
+}
+
+section h2{
+font-size: 2.5em;
+margin-bottom: 40px;
+color: #333;
+border-bottom: 3px solid #3b0e00;
+display: inline-block;
+padding-bottom: 10px;
+}
+
+#produtos{
+background-color: #f1f1f1;
+}
+
+#produtos article{
+display: flex;
+justify-content: space-around;
+gap: 20px;
+max-width: 1200px;
+margin: 0 auto;
+flex-wrap: wrap;
+}
+
+img{
+width: 100%;
+height: 250px;
+object-fit: cover;
+display: block;
+}
+
+figure{
+flex-basis: 30%;
+min-width: 250px;
+text-align: center;
+background-color: #f1f1f1;
+border-radius: 10px;
+box-shadow: 0 4px 8px;
+overflow: hidden;
+transition: transform 0.3s;
+}
+
+figure:hover{
+transform: translateY(-7px)
+}
+
+figcaption{
+padding: 15px 10px;
+font-weight:bold;
+font-size: 1.2em;
+color: #333;
+}
+
+#historico{
+background-color: #7a331d3f;
+}
+
+#historico p{
+font-size: 1.1em;
+text-align: justify;
+margin: 20px auto;
+max-width: 800px;
+}
+
+footer{
+    background-color: #3b0e00;
+    color:#f1f1f1;
+    padding: 2px 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer p, footer address, footer a{
+    margin-bottom: 5px;
+    display: block;
+}
+
+*{
+margin: 0;
+}
+
+/* ICONES; */
+
+.icones {
+display: flex;
+width: 500px;
+margin: auto;
+justify-content: space-around;
+}
+
+.icones a{
+font-size: 20px;
+color: #f1f1f1;
+}
+
+.icones a:hover{
+color: #b14100;
+text-shadow: 2px 2px 5px #000000;
+}
+
